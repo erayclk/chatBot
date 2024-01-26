@@ -177,7 +177,7 @@ class ColorfulChat(tk.Tk):
     def chat_logic(self, user_input):
         # Initialize the client
         client = openai.OpenAI(
-            api_key='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'
+            api_key='your-apikey'
         )
 
         # Step 1: Create an Assistant
@@ -262,7 +262,7 @@ class ColorfulChat(tk.Tk):
     def grammer_check(self, user_input):
         print("oooo")
         client = openai.OpenAI(
-            api_key='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'
+            api_key='your-apikey'
         )
         assistant2 = client.beta.assistants.create(
             name="bot2",
